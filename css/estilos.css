@@ -1,0 +1,138 @@
+/*Quitar borde*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background-color: #40a8c4;
+}
+/*Cabecera de pagina*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #a2d5f2;
+    display: flex;
+    position: fixed;
+}
+
+header > div{
+    width:50%;
+}
+
+.logo{
+    width: 60px;
+}
+
+.contenedor_logo{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_logo > h1{
+    color: white;
+    font:215% Arial ;
+    }
+
+header> div> nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+
+nav > ul{
+    margin-right: 50px;
+    
+}
+nav>ul>li{
+    display: inline;
+    margin-left: 10px;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+ /*Contenido Principal*/
+#contenido{
+    width: 80%;
+    margin: auto;
+    max-width: 1280px;
+    min-height: 100vh;
+}
+
+/*FOOTER*/
+
+footer{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #2d3748;
+}
+
+footer> div > a{
+    color: white;
+    text-decoration: none;
+    }
+
+footer > div {
+    width: 50%;
+    float: left;
+}
+
+.logos > div{
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+footer > .logos > div > img{
+    padding-top: 20px;
+    width: 80px;    
+    }
+
+.enlaces  > div > a{
+    display: flex;
+    justify-content: left;
+    line-height: 40px;
+}
+.enlace{
+    color: white;
+    text-decoration: none;
+}
+.titulo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*TABLETS*/
+
+@media (max-width:1024px){
+
+
+}
+
+@media (max-width:480px){
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    .logos{
+        justify-content: center;
+        width: 100%;
+    }
+    .enlaces{
+        padding-top: 30px;
+        padding-left: 20px;        
+    }
+}
