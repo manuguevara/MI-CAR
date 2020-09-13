@@ -15,6 +15,7 @@ header{
     background-color: #a2d5f2;
     display: flex;
     position: fixed;
+    transition: all 0.3s;
 }
 
 header > div{
@@ -62,7 +63,7 @@ nav a{
     width: 80%;
     margin: auto;
     max-width: 1280px;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 /*FOOTER*/
@@ -141,9 +142,23 @@ footer > .logos > div > img{
     .menu{
         display: block;
     }
+
+    @keyframes animacion_servicio_smartphone{/*animacion para servicios*/
+        0%{
+            transform: scale(0.1);
+        }
+        80%{
+            transform: scale(1.1);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+    }
     header{
         flex-direction: column;
-        height: auto;
+        height: 110px;
+        overflow: hidden;
     }
 
     header > div {
