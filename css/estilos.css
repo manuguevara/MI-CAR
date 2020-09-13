@@ -75,6 +75,37 @@ nav a{
     margin: auto;}
 
 
+.servicios div{
+    background-color: #a2d5f2;
+    width: 100%;
+    display: flex;
+}
+
+.servicios > div > div{
+    width: 50%;
+}
+.titulo-servicio{
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+.texto{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    line-height: 30pt;
+    padding-left: 50px;
+    width: 100%;
+    }
+
+.img-servicio{
+    padding: 30px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+}
 
 /*FOOTER*/
 
