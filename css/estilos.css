@@ -62,12 +62,9 @@ nav a{
     margin: auto;
     max-width: 1280px;
     min-height: 100vh;
+    padding: auto;
 }
 
-.bx-wrapper {
-    padding: 0;
-    position: relative;
-}
 
 /*FOOTER*/
 
