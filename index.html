@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lavado de Autos - Don Miguel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -29,9 +30,29 @@
             </nav>
         </div>
     </header>
-    <div id="contenido">
-
+   <div id="contenido">
+        <div class="slider">
+                <div>
+                    <img src="img/carrusel/carrusel-auto-agua.jpg" alt="carrusel1">
+                </div>
+                <div>
+                    <img src="img/carrusel/carrusel-auto-esponja.jpg" alt="carrusel2">
+                </div>
+                <div>
+                    <img src="img/carrusel/carrusel-auto-esponja2.jpg" alt="carrusel3">
+                </div>
+                <div>
+                    <img src="img/carrusel/carrusel-auto-paño.jpg" alt="carrusel4">
+                </div>
+                <div>
+                    <img src="img/carrusel/carrusel-auto-paño2.jpg" alt="carrusel5">
+                </div>
+                <div>
+                    <img src="img/carrusel/carrusel-auto-secado.jpg" alt="carrusel6">
+                </div>
+        </div>
     </div>
+
     <footer>
         <div class="logos">
             <div>
@@ -52,7 +73,21 @@
         </div>
         
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            mode: 'fade',
+            slideWidth: 600,
+            responsive: true
+        });
+        });
+    </script>
 
     <script src="js/menu.js"></script>
+
 </body>
 </html>
