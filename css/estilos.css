@@ -59,11 +59,10 @@ nav a{
  /*Contenido Principal*/
 #contenido{
     width: 80%;
-    margin: auto;
     max-width: 1280px;
     min-height: 100vh;
-    padding: auto;
-}
+    margin: auto;}
+
 
 
 /*FOOTER*/
