@@ -45,7 +45,6 @@ header> div> nav{
 }
 
 nav > ul{
-    margin: 0;
     margin-right: 50px;
 }
 nav>ul>li{
@@ -76,6 +75,7 @@ nav a{
     min-height: 100vh;
     margin: auto;
 }
+
 
 
 .servicios div{
