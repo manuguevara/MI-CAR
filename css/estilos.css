@@ -7,6 +7,7 @@
 
 body{
     background-color: #40a8c4;
+    overflow-x: hidden;
 }
 /*Cabecera de pagina*/
 header{
@@ -44,6 +45,7 @@ header> div> nav{
 }
 
 nav > ul{
+    margin: 0;
     margin-right: 50px;
 }
 nav>ul>li{
@@ -72,7 +74,8 @@ nav a{
     width: 80%;
     max-width: 1280px;
     min-height: 100vh;
-    margin: auto;}
+    margin: auto;
+}
 
 
 .servicios div{
