@@ -108,6 +108,17 @@ nav a{
     align-items: center;
 }
 
+.opiniones {
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+
+.estrella{
+    color: orange;
+    font-size: 30px;
+
+}
 /*FOOTER*/
 
 footer{
@@ -222,13 +233,17 @@ footer > .logos > div > img{
         flex-direction: column;
         height: 110px;
         overflow: hidden;
+        top: 0;
+        left: 0;
     }
+
 
     header > div {
         width: 100%;
     }
     .contenedor_logo{
         justify-content: center;
+        width: 100%;
     }
 
     header > div > nav{
