@@ -72,11 +72,10 @@ nav a{
 #contenido{
     width: 80%;
     max-width: 1280px;
-    min-height: 100vh;
+    min-height: 80vh;
+    height: auto;
     margin: auto;
 }
-
-
 
 .servicios div{
     background-color: #a2d5f2;
@@ -120,6 +119,47 @@ nav a{
 .estrella{
     color: orange;
     font-size: 30px;
+
+}
+
+/*Contenido Mision y Vision*/
+
+
+.img-mv{
+    display: flex;
+    justify-content: center;  
+    margin: 20px; 
+}
+.intro{
+    background-color: #a2d5f2;
+    width: auto;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-justify: distribute;
+    }
+.misionvision{
+    background-color: #a2d5f2;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.mision {
+    background-color: #85caf1;
+    margin: 30px;
+    margin-right: 5px;
+    border-radius: 15px 0px 0px 15px;
+    padding: 10px;
+    padding-right: 0px;
+
+}
+.vision{
+    background-color:#4a7791;
+    margin: 30px;
+    margin-left: 5px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
 
 }
 /*FOOTER*/
@@ -199,6 +239,13 @@ footer > .logos > div > img{
     .servicios img{
         width: 100%;
     }
+    .img-mv img{
+        width: 100%;
+    }
+    .intro{
+        margin: auto;
+        margin-top: 20px;
+    }
     .texto{
         padding: 0;
     }
@@ -222,6 +269,20 @@ footer > .logos > div > img{
     }
     .servicios img{
         width: 100%;
+    }
+    .misionvision{
+        flex-direction: column;
+        width: auto;
+    }
+    .mision{
+        border-radius: 15px;
+        margin: 20px;
+        margin-bottom: 10px;
+    }
+    .vision{
+        border-radius: 15px;
+        margin: 20px;
+        margin-top: 10px;
     }
     @keyframes animacion_servicio_smartphone{/*animacion para servicios*/
         0%{
