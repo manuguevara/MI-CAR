@@ -41,11 +41,24 @@ header> div> nav{
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    align-items: center;
+    align-items: flex-end;
+
+}
+.feriado {
+    background-color: #96c2dd;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 10px;
+
+}
+nav {
+    flex-direction: column;
 }
 
 nav > ul{
     margin-right: 50px;
+    margin-top: 30px;
+    height: 100%;
 }
 nav>ul>li{
     display: inline;
@@ -317,12 +330,21 @@ footer > .logos > div > img{
 
     header > div > nav{
         justify-content: center;
+        align-items: center;
     }
 
     nav > ul{
         margin: 0;
     }
 
+    
+
+    .feriado > li{
+        background-color: #96c2dd;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 0;
+    }
     nav > ul > li {
         display: block;
         margin: 0;
