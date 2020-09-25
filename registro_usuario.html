@@ -47,26 +47,41 @@
             </nav>
         </div>
     </header>
-    <div id="contenido">
+   <div id="contenido">
         <br>
-        <h1 class="titulo">Ingreso de insumos</h1>
+        <h1 class="titulo">Regístrate!</h2>
         <br>
-        <form action="" class="formulario_insumo">
-            <label for="nombre">Nombre:</label>
+        <form action="" class="formulario_registro">
+            <label for="rut">Rut</label>
+            <input type="text" id="rut" name="rut" placeholder="Ingrese su rut">
             <br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
             <br>
-            <label for="precio">Precio:</label>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
             <br>
-            <input type="number" name="precio" id="precio" placeholder="Ingrese el precio">
             <br>
-            <label for="descripcion">Descripción:</label>  
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
             <br>
-            <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Ingrese una descripción"></textarea>
             <br>
-            <button type="button" id="btnEnviar" class="button">Enviar</button>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="tu@email.cl">
+            <br>
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimineto</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <br>
+            <br>
+            <label for="nombre_usuario">Nombre de usuario</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario"> 
+            <br>
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña">
+            <br>
+            <br>
+            <button type="button" id="btnRegistrar"class="button">Registrar</button>
         </form>
-        
     </div>
 
     <footer>
@@ -92,6 +107,7 @@
         </div>
         
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/feriados.js"></script>
