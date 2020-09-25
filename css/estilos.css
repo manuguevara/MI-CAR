@@ -18,7 +18,7 @@ header{
 }
 
 header > div{
-    width:50%;
+    width:70%;
 }
 
 .logo{
@@ -30,6 +30,7 @@ header > div{
 .contenedor_logo{
     display: flex;
     align-items: center;
+    width: 40%;
 }
 
 .contenedor_logo > h1{
@@ -288,7 +289,7 @@ footer > .logos > div > img{
     }
 }
 
-@media (max-width:500px){
+@media (max-width:570px){
 
     body{
         overflow-x: hidden;
