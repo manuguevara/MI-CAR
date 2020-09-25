@@ -152,6 +152,23 @@ nav a{
     justify-content: center;
 }
 
+
+/*Contenido formularios*/
+.formulario_insumo{
+color: white;
+
+}
+.formulario_registro{
+    color: white;
+}
+.button{
+    padding: 5px 10px;
+    color: white;
+    background-color: #2d3748;
+    border-radius: 5px;
+}
+
+
 /*Contenido Mision y Vision*/
 
 
