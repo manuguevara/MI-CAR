@@ -295,7 +295,10 @@ footer > .logos > div > img{
     }
     .servicios div .texto{
         align-items: unset;
-        
+    }
+
+    .servicios div .texto-izquierda{
+        align-items: unset;
     }
     .misionvision{
         flex-direction: column;
