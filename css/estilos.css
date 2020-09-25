@@ -49,7 +49,11 @@ header> div> nav{
     border-radius: 5px;
     height: auto;
     margin-top: 10px;
+}
 
+.feriado > li{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 nav {
     flex-direction: column;
@@ -244,6 +248,10 @@ footer > .logos > div > img{
 /*TABLETS*/
 
 @media (max-width:1024px){
+    nav > .feriado{
+        display: flex;
+        flex-direction: column;
+    }
     .galeria{
         grid-template-columns: 1fr 1fr;
     }
