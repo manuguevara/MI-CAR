@@ -12,7 +12,7 @@ $("#formulario_insumo").validate({
             min: 1
         },
         descripcion:{
-            required:false,
+            required:true,
             minlength:3,
             maxlength:200
         }
