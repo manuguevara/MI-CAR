@@ -23,15 +23,29 @@ $("#formulario_insumo").validate({
 })
 $("#btnEnviar").click(function(){
     if(!$("#formulario_insumo").valid()){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo salió mal!',
+            footer: '<a>Tip: revise los campos</a>'
+          })
         return;
     }
-
-    let nombre = $("#nombre").val()
+    /*let nombre = $("#nombre").val()
     let precio = $("#precio").val()
-    let descripcion = $("#descripcion").val()
+    let descripcion = $("#descripcion").val()*/
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El insumo ' + $("#nombre").val() + ' ha sido ingresado correctamente.',
+        showConfirmButton: false,
+        timer: 1500
+      })
 })
 
 /*Validaciones formulario registro de usuario*/ 
+
+/*Funcion y metodo para validar rut */
 var funcionRut = {
 	// Valida el rut con su cadena completa "XXXXXXXX-X"
 	validaRut : function (rutCompleto) {
@@ -58,7 +72,21 @@ jQuery.validator.addMethod("rut_valido", function(value, element) {
     return this.optional( element ) || funcionRut.validaRut( $(element).val() );
   }, 'Por favor ingrese un rut valido(12345678-K).');
 
-let fecha_actual = Date();
+/*Funcion para validar fecha de nacimiento */
+
+function validaFecha(fecha) {
+    let fecha_actual = new Date(new Date().setHours(0,0,0,0,));
+    fecha = new Date(fecha.split("-").join("/"))
+    if(fecha>=fecha_actual){
+        return false
+    }
+    return true
+}
+
+jQuery.validator.addMethod("fecha_valida", function(value, element) {
+    // Se crea el metodo custom para validar rut
+    return this.optional( element ) || validaFecha($(element).val());
+  }, 'Por favor ingrese una fecha de nacimiento valida.');
 
 $("#formulario_registro").validate({
     rules: {
@@ -82,7 +110,8 @@ $("#formulario_registro").validate({
         },
         fecha_nacimiento:{
             required:true,
-            date:true
+            date:true,
+            fecha_valida:true
         },
         nombre_usuario:{
             required:true,
@@ -92,21 +121,34 @@ $("#formulario_registro").validate({
             required:true,
             minlength:8
         }
-    },
-    messages:{
-        required:"Este campo es requerido"
     }
 })
 
 $("#btnRegistrar").click(function(){
     if(!$("#formulario_registro").valid()){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo salió mal!',
+            footer: '<a>Tip: revise los campos</a>'
+          })
         return;
     }
+
+    /*
     let rut = $("#rut").val()
     let nombre = $("#nombre").val()
     let apellido = $("#apellido").val()
     let email = $("#email")
     let fecha_nacimiento = $("#fecha_nacimiento").val()
     let nombre_usuario = $("#nombre_usuario").val()
-    let contraseña = $("#contraseña").val()
+    let contraseña = $("#contraseña").val()*/
+    
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El usuario ' + $("#nombre_usuario").val() + ' ha sido registrado correctamente.',
+        showConfirmButton: false,
+        timer: 1500
+      })
 })
