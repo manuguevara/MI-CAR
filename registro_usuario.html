@@ -52,32 +52,36 @@
         <h1 class="titulo">Regístrate!</h2>
         <br>
         <form action="" id="formulario_registro" class="formulario_registro">
-            <label for="rut">Rut</label>
-            <input type="text" id="rut" name="rut" placeholder="Ingrese su rut">
-            <br>
-            <br>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
-            <br>
-            <br>
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
-            <br>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="tu@email.cl">
-            <br>
-            <br>
-            <label for="fecha_nacimiento">Fecha de nacimineto</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-            <br>
-            <br>
-            <label for="nombre_usuario">Nombre de usuario</label>
-            <input type="text" id="nombre_usuario" name="nombre_usuario"> 
-            <br>
-            <br>
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" name="contraseña">
+            <div class="form_labels">
+                <label for="rut">Rut</label>
+                <br>
+                <label for="nombre">Nombre</label>
+                <br>
+                <label for="apellido">Apellido</label>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <br>
+                <label for="nombre_usuario">Nombre de usuario</label>
+                <br>
+                <label for="contraseña">Contraseña</label>
+            </div>
+            <div class="form_inputs">
+                <input type="text" id="rut" name="rut" placeholder="Ingrese su rut">
+                <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                <br>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                <br>
+                <input type="email" name="email" id="email" placeholder="tu@email.cl">
+                <br>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                <br>
+                <input type="text" id="nombre_usuario" name="nombre_usuario">
+                <br>
+                <input type="password" id="contraseña" name="contraseña">
+            </div>
             <br>
             <br>
             <button type="button" id="btnRegistrar"class="button">Registrar</button>
@@ -113,6 +117,7 @@
     <script src="js/menu.js"></script>
     <script src="js/feriados.js"></script>
     <script src="js/formularios.js"></script>
+    <script src="js/traducciones.js"></script>
 
 </body>
 </html>

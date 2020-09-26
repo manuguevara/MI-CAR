@@ -4,7 +4,9 @@
     padding: 0;
     font-family: Arial;
 }
-
+label.error{
+    color: darkred;
+}
 body{
     background-color: #40a8c4;
     overflow-x: hidden;
@@ -167,7 +169,19 @@ color: white;
     background-color: #2d3748;
     border-radius: 5px;
 }
-
+.form_labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.formulario_registro div{
+  display: inline-block; 
+}
 
 /*Contenido Mision y Vision*/
 

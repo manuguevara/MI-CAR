@@ -31,12 +31,40 @@ $("#btnEnviar").click(function(){
     let descripcion = $("#descripcion").val()
 })
 
+/*Validaciones formulario registro de usuario*/ 
+var funcionRut = {
+	// Valida el rut con su cadena completa "XXXXXXXX-X"
+	validaRut : function (rutCompleto) {
+        /*Si el elemento rutCompleto es comienza distinto de [0-9] no contiene un - ni un caracter de [0-9] incluyendo k o K entonces retorna falso */
+		if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
+            return false;
+        /*Se divide el rut en 2 partes tomando el - como el divisor */
+		var tmp 	= rutCompleto.split('-');
+		var digv	= tmp[1]; 
+		var rut 	= tmp[0];
+		if ( digv == 'K' ) digv = 'k' ;
+		return (funcionRut.dv(rut) == digv );
+    },
+    /*Funcion para calcular digito verificador*/
+	dv : function(T){
+		var M=0,S=1;
+		for(;T;T=Math.floor(T/10))
+			S=(S+T%10*(9-M++%6))%11;
+		return S?S-1:'k';
+	}
+}
+jQuery.validator.addMethod("rut_valido", function(value, element) {
+    // Se crea el metodo custom para validar rut
+    return this.optional( element ) || funcionRut.validaRut( $(element).val() );
+  }, 'Por favor ingrese un rut valido(12345678-K).');
+
+let fecha_actual = Date();
+
 $("#formulario_registro").validate({
     rules: {
         rut:{
             required: true,
-            minlength: 9,
-            maxlength: 10
+            rut_valido: true
         },
         nombre:{
             required:true,
