@@ -49,7 +49,7 @@ $("#formulario_registro").validate({
             maxlength: 80
         },
         email:{
-            required:false,
+            required:true,
             email:true
         },
         fecha_nacimiento:{
