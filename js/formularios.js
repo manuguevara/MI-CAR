@@ -31,7 +31,7 @@ $("#btnEnviar").click(function(){
     let descripcion = $("#descripcion").val()
 })
 
-$("#formulario_insumo").validate({
+$("#formulario_registro").validate({
     rules: {
         rut:{
             required: true,
@@ -71,6 +71,9 @@ $("#formulario_insumo").validate({
 })
 
 $("#btnRegistrar").click(function(){
+    if(!$("#formulario_registro").valid()){
+        return;
+    }
     let rut = $("#rut").val()
     let nombre = $("#nombre").val()
     let apellido = $("#apellido").val()
